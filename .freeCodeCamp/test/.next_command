@@ -1,0 +1,229 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+'/ide/node' -p '"ef58f402d4ae" + JSON.stringify(process.env) + "ef58f402d4ae"'
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+'/ide/node' -p '"a4ee6f545b31" + JSON.stringify(process.env) + "a4ee6f545b31"'
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+cat games.csv
+cat games.csv HEAD
+cat games.csv
+cat games.csv
+head man
+man head
+clear
+cat games.csv
+cat games.csv
+insert_data.sh
+./insert_data.sh
+./insert_data.sh
+test man
+man test
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+clear
+./insert_data.sh
+__vsc_prompt_cmd_original
+man if
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+'/ide/node' -p '"0d36ff225cc5" + JSON.stringify(process.env) + "0d36ff225cc5"'
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+psql --username=freecodecamp --dbname=postgres
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+pg_dump -cc --inserts -U freecodecamp worldcup > worldcup.sql
+./insert_data.sh
+clear
+test help
+test man
+man test
+man expression
+man EXPRESSION
+expression help
+EXPRESSION help
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+clear
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+clear
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./queries.sh
+./queries.sh
+./queries.sh
+clear
+./queries.sh
+./queries.sh
+psql --username=freecodecamp --dbname=postgres
+clear
+./queries.sh
+./insert_data.sh
+./insert_data.sh
+clear
+./queries.sh
